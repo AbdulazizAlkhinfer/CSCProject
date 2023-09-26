@@ -11,16 +11,25 @@ public class LinkedList {
         } else if (head.getContact().compareTo(contact) <= 0
                 && head.getContact().getPhoneNumber() != contact.getPhoneNumber()) {
             contactN.setNext(head);
+            /*ADD CONTACT N
+             *FIND FIRST
+             STORE THE HEAD
+             REMOVE THE HEAD
+            ADD THE HEAD
+             */
             head = contactN;
 
         } else {
             while (current.getNext() != null && current.getNext().getContact().compareTo(contact) < 0
                     && current.getContact().getPhoneNumber() != contact.getPhoneNumber()) {
                 current = current.getNext();
+                /*FIND FIRST 
+                 * GETNEXT
+                 */
             }
             current.setNext(current.getNext());
             current.setNext(contactN);
-
+            /*????? why 2 setnexts this is also need to fix it */
         }
 
     }

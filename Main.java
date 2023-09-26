@@ -69,16 +69,16 @@ public class Main {
         System.out.print("Enter the contact phone number: ");
         String phoneNumber = scanner.nextLine();
 
-        System.out.println("Enter the contact email address: ");
+        System.out.print("Enter the contact email address: ");
         String emailAddress = scanner.nextLine();
 
-        System.out.println("Enter the contact address: ");
+        System.out.print("Enter the contact address: ");
         String address = scanner.nextLine();
 
-        System.out.println("Enter the contact birthday: ");
+        System.out.print("Enter the contact birthday: ");
         String birthday = scanner.nextLine();
 
-        System.out.println("Enter notes you want to leave for the contact: ");
+        System.out.print("Enter notes you want to leave for the contact: ");
         String notes = scanner.nextLine();
 
         Contact contact = new Contact(name, phoneNumber, emailAddress, address, birthday, notes);
@@ -129,21 +129,21 @@ public class Main {
             switch (choicee) {
 
                 case 1:
-                    System.out.println("Enter contact name: ");
+                    System.out.print("Enter contact name: ");
                     String name = scanner.next();
                     System.out.println("------------");
                     phoneBook.findContactByName(name);
                     System.out.println("------------");
                     break;
                 case 2:
-                    System.out.println("Enter contact Phone number: ");
+                    System.out.print("Enter contact Phone number: ");
                     String phoneNumber = scanner.next();
                     System.out.println("------------");
                     phoneBook.findContactByPhone(phoneNumber);
                     System.out.println("------------");
                     break;
                 case 3:
-                    System.out.println("Enter contact Email address: ");
+                    System.out.print("Enter contact Email address: ");
                     String email = scanner.next();
                     System.out.println("------------");
                     phoneBook.findContactByEmail(email);
